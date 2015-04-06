@@ -14,6 +14,7 @@ namespace Agricoler
     {
         public Agricoler()
         {
+            //Pozdrowienia od Grześka
             InitializeComponent();
         }
     }
