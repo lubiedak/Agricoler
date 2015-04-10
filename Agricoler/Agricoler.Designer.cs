@@ -33,9 +33,13 @@
             this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainLayout = new System.Windows.Forms.TableLayoutPanel();
             this.mainBoard = new System.Windows.Forms.PictureBox();
+            this.farm1blue = new System.Windows.Forms.PictureBox();
+            this.farm1red = new System.Windows.Forms.PictureBox();
             this.mainMenu.SuspendLayout();
             this.mainLayout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainBoard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.farm1blue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.farm1red)).BeginInit();
             this.SuspendLayout();
             // 
             // mainMenu
@@ -46,7 +50,7 @@
             this.mainMenu.Location = new System.Drawing.Point(0, 0);
             this.mainMenu.Name = "mainMenu";
             this.mainMenu.Padding = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.mainMenu.Size = new System.Drawing.Size(620, 24);
+            this.mainMenu.Size = new System.Drawing.Size(640, 24);
             this.mainMenu.TabIndex = 1;
             this.mainMenu.Text = "menuStrip1";
             // 
@@ -67,19 +71,23 @@
             // mainLayout
             // 
             this.mainLayout.AutoSize = true;
-            this.mainLayout.ColumnCount = 2;
-            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.6129F));
-            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.3871F));
-            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.mainLayout.ColumnCount = 5;
+            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.mainLayout.Controls.Add(this.mainBoard, 0, 0);
+            this.mainLayout.Controls.Add(this.farm1blue, 1, 0);
+            this.mainLayout.Controls.Add(this.farm1red, 1, 1);
             this.mainLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainLayout.Location = new System.Drawing.Point(0, 24);
+            this.mainLayout.Margin = new System.Windows.Forms.Padding(0);
             this.mainLayout.Name = "mainLayout";
             this.mainLayout.RowCount = 2;
             this.mainLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.mainLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.mainLayout.Size = new System.Drawing.Size(620, 460);
+            this.mainLayout.Size = new System.Drawing.Size(640, 460);
             this.mainLayout.TabIndex = 2;
             // 
             // mainBoard
@@ -95,22 +103,49 @@
             this.mainBoard.TabIndex = 0;
             this.mainBoard.TabStop = false;
             // 
+            // farm1blue
+            // 
+            this.farm1blue.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.farm1blue.Image = global::Agricoler.Properties.Resources.farm;
+            this.farm1blue.Location = new System.Drawing.Point(320, 0);
+            this.farm1blue.Margin = new System.Windows.Forms.Padding(0);
+            this.farm1blue.Name = "farm1blue";
+            this.farm1blue.Size = new System.Drawing.Size(128, 230);
+            this.farm1blue.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.farm1blue.TabIndex = 1;
+            this.farm1blue.TabStop = false;
+            // 
+            // farm1red
+            // 
+            this.farm1red.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.farm1red.Image = global::Agricoler.Properties.Resources.farm;
+            this.farm1red.Location = new System.Drawing.Point(320, 230);
+            this.farm1red.Margin = new System.Windows.Forms.Padding(0);
+            this.farm1red.Name = "farm1red";
+            this.farm1red.Size = new System.Drawing.Size(128, 230);
+            this.farm1red.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.farm1red.TabIndex = 2;
+            this.farm1red.TabStop = false;
+            // 
             // Agricoler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(620, 484);
+            this.ClientSize = new System.Drawing.Size(640, 484);
             this.Controls.Add(this.mainLayout);
             this.Controls.Add(this.mainMenu);
             this.MainMenuStrip = this.mainMenu;
-            this.MaximumSize = new System.Drawing.Size(1256, 982);
-            this.MinimumSize = new System.Drawing.Size(636, 522);
+            this.MaximumSize = new System.Drawing.Size(1040, 798);
+            this.MinimumSize = new System.Drawing.Size(656, 522);
             this.Name = "Agricoler";
             this.Text = "Agricoler";
+            this.ResizeEnd += new System.EventHandler(this.Agricoler_ResizeEnd);
             this.mainMenu.ResumeLayout(false);
             this.mainMenu.PerformLayout();
             this.mainLayout.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.mainBoard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.farm1blue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.farm1red)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,6 +158,8 @@
         private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
         private System.Windows.Forms.TableLayoutPanel mainLayout;
         private System.Windows.Forms.PictureBox mainBoard;
+        private System.Windows.Forms.PictureBox farm1blue;
+        private System.Windows.Forms.PictureBox farm1red;
     }
 }
 

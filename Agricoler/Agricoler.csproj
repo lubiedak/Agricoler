@@ -50,6 +50,7 @@
     <Compile Include="Agricoler.Designer.cs">
       <DependentUpon>Agricoler.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainResizer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Agricoler.resx">
@@ -80,6 +81,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="graphics\main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="graphics\farm.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
