@@ -13,12 +13,11 @@ namespace Agricoler
     public partial class Agricoler : Form
     {
         MainResizer mainResizer;
+
         public Agricoler()
         {
-            //Pozdrowienia od Grześka
-            mainResizer = new MainResizer();
             InitializeComponent();
-
+            mainResizer = new MainResizer(this);
         }
 
         private void Agricoler_ResizeEnd(object sender, EventArgs e)

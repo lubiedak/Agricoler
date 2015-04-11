@@ -15,21 +15,17 @@ namespace Agricoler
         int lastWidth;
         int lastHeight;
 
-        double ratio;
-
-        public MainResizer()
+        public MainResizer(Form f)
         {
             marginWidth = 16;
             marginHeight = 62;
-            lastWidth = 656;
-            lastHeight = 522;
-
+            lastWidth = f.Width;
+            lastHeight = f.Height;
         }
 
         public void Resize(Form f)
         {
             if ((f.Height - lastHeight) > (f.Width - lastWidth))
-            //Check for which one is resized more height/width
             {
                 f.Width = (int)(640 * (f.Height-marginHeight)/460 + marginWidth);
             }
