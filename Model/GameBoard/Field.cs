@@ -10,7 +10,12 @@ namespace Model
     {
         public int id { get; private set; }
         public String name { get; private set; }
-        public Action action { get; private set; }
+
+        public Field(int id, String name)
+        {
+            this.id = id;
+            this.name = name;
+        }
 
         public virtual void DoAction(Player p)
         {

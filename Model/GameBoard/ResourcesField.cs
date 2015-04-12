@@ -6,7 +6,24 @@ using System.Threading.Tasks;
 
 namespace Model.GameBoard
 {
-    public class ResourcesField
+    public class ResourcesField : Field
     {
+        Resources _resources;
+        
+        public ResourcesField(int id, String name, Resources resources) : base(id, name)
+        {
+            _resources = resources;
+        }
+
+        public override void DoAction(Player player)
+        {
+            player.AddResources(_resources);
+            _resources.UseAll();
+        }
+
+        public void Add(Resources resources)
+        {
+            _resources.Add(resources);
+        }
     }
 }

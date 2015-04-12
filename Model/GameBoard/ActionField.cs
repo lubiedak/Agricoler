@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Model.GameBoard
 {
-    public class ActionField
+    public class ActionField : Field
     {
+        public Action action { private get; private set; }
     }
 }
