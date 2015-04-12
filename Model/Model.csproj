@@ -39,20 +39,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal.cs" />
-    <Compile Include="Board.cs" />
-    <Compile Include="BuildingResource.cs" />
-    <Compile Include="Cow.cs" />
-    <Compile Include="Field.cs" />
     <Compile Include="Game.cs" />
-    <Compile Include="Goods.cs" />
-    <Compile Include="Horse.cs" />
-    <Compile Include="Pig.cs" />
+    <Compile Include="GameBoard/Action.cs" />
+    <Compile Include="GameBoard/ActionField.cs" />
+    <Compile Include="GameBoard/Board.cs" />
+    <Compile Include="GameBoard/Field.cs" />
+    <Compile Include="GameBoard/ResourcesField.cs" />
+    <Compile Include="Goods/Animal.cs" />
+    <Compile Include="Goods/Cow.cs" />
+    <Compile Include="Goods/Goods.cs" />
+    <Compile Include="Goods/Horse.cs" />
+    <Compile Include="Goods/Pig" />
+    <Compile Include="Goods/Resources.cs" />
+    <Compile Include="Goods/Sheep.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PlayerBoard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Score.cs" />
-    <Compile Include="Sheep.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

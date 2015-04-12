@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model
+namespace Model.GameBoard
 {
-    public class BuildingResource
+    class ResourcesField
     {
     }
 }
