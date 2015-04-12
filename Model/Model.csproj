@@ -44,6 +44,7 @@
     <Compile Include="GameBoard\ActionField.cs" />
     <Compile Include="GameBoard\Board.cs" />
     <Compile Include="GameBoard\Field.cs" />
+    <Compile Include="GameBoard\FieldBuilder.cs" />
     <Compile Include="GameBoard\ResourcesField.cs" />
     <Compile Include="Goods\Animal.cs" />
     <Compile Include="Goods\Cow.cs" />

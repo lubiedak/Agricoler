@@ -8,6 +8,13 @@ namespace Model.GameBoard
 {
     public class ActionField : Field
     {
-        public Action action { private get; private set; }
+        
+
+        public ActionField(int id, String name) : base(id,name)
+        {
+
+        }
+
+        public Action action { get; private set; }
     }
 }
