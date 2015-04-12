@@ -8,5 +8,11 @@ namespace Model
 {
     public class Player
     {
+        
+
+        public void AddResources(Resources r)
+        {
+
+        }
     }
 }
