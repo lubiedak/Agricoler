@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agricoler", "Agricoler\Agri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{63DCFF92-2C71-4315-B85D-FDB08CBF952C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsModel", "TestsModel\TestsModel.csproj", "{7F32A73A-B3B5-4C74-AACA-0A0684689A7F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{63DCFF92-2C71-4315-B85D-FDB08CBF952C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63DCFF92-2C71-4315-B85D-FDB08CBF952C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63DCFF92-2C71-4315-B85D-FDB08CBF952C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F32A73A-B3B5-4C74-AACA-0A0684689A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F32A73A-B3B5-4C74-AACA-0A0684689A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F32A73A-B3B5-4C74-AACA-0A0684689A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F32A73A-B3B5-4C74-AACA-0A0684689A7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
