@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model.GameBoard
 {
-    class ResourcesField
+    public class ResourcesField
     {
     }
 }
