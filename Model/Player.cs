@@ -9,11 +9,16 @@ namespace Model
 {
     public class Player
     {
-        
+        public Resources _resources { get; private set; }
+
+        public Player()
+        {
+            _resources = new Resources(0, 0, 0);
+        }
 
         public void AddResources(Resources r)
         {
-
+            _resources.Add(r);
         }
     }
 }

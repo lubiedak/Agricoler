@@ -83,5 +83,10 @@ namespace Model.Goods
             _stone = 0;
             _reed  = 0;
         }
+
+        public bool Equals(Resources r)
+        {
+            return _wood == r._wood && _stone == r._stone && _reed == r._reed;
+        }
     }
 }

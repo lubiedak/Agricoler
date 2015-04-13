@@ -10,7 +10,7 @@ namespace Model.GameBoard
 {
     public class ResourcesField : Field
     {
-        Resources _resources;
+        public Resources _resources {get; private set;}
         
         public ResourcesField(int id, String name, Resources resources) : base(id, name)
         {
