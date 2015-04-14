@@ -9,16 +9,22 @@ namespace Model
 {
     public class Player
     {
-        public Resources _resources { get; private set; }
+        public Resources resources { get; private set; }
+        public List<Animal> animals { get; private set; }
 
         public Player()
         {
-            _resources = new Resources(0, 0, 0);
+            resources = new Resources(0, 0, 0);
         }
 
         public void AddResources(Resources r)
         {
-            _resources.Add(r);
+            resources.Add(r);
+        }
+
+        public void AddAnimals(List<Animal> animals)
+        {
+
         }
     }
 }

@@ -42,10 +42,15 @@
     <Compile Include="Game.cs" />
     <Compile Include="GameBoard\Action.cs" />
     <Compile Include="GameBoard\ActionField.cs" />
+    <Compile Include="GameBoard\AnimalField.cs" />
     <Compile Include="GameBoard\Board.cs" />
+    <Compile Include="GameBoard\BuildingField.cs" />
+    <Compile Include="GameBoard\FencesField.cs" />
     <Compile Include="GameBoard\Field.cs" />
     <Compile Include="GameBoard\FieldBuilder.cs" />
     <Compile Include="GameBoard\ResourcesField.cs" />
+    <Compile Include="GameBoard\ResourcesWSRField.cs" />
+    <Compile Include="GameBoard\SheepsAndReedField.cs" />
     <Compile Include="Goods\Animal.cs" />
     <Compile Include="Goods\Cow.cs" />
     <Compile Include="Goods\Goods.cs" />

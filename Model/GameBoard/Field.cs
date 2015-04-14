@@ -17,9 +17,8 @@ namespace Model.GameBoard
             this.name = name;
         }
 
-        public virtual void DoAction(Player p)
-        {
+        public virtual void DoAction(Player p) { }
 
-        }
+        public virtual void Refill() { }
     }
 }
