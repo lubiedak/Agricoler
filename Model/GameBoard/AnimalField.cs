@@ -27,6 +27,7 @@ namespace Model.GameBoard
         {
             player.AddAnimals(animals);
             animals.Clear();
+            isOccupied = true;
         }
 
         public override void Refill()
@@ -35,6 +36,7 @@ namespace Model.GameBoard
                 animals.Add(new Animal(firstType));
             else
                 animals.Add(new Animal(restType));
+            isOccupied = false;
         }
     }
 }

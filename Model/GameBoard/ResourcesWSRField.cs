@@ -10,14 +10,11 @@ namespace Model.GameBoard
 {
     public class ResourcesWSRField : Field
     {
-        public ResourcesWSRField(int id, String name, Resources baseFill) : base(id, name)
+        public ResourcesWSRField(int id, String name) : base(id, name) { }
+        public override void DoAction(Player player)
         {
-            
-        }
-
-        public override void DoAction(Player p)
-        {
-            p.AddResources(new Resources(1, 1, 1));
+            player.AddResources(new Resources(1, 1, 1));
+            isOccupied = true;
         }
     }
 }

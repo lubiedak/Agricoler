@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Model.Goods;
+using Model.GameBoard;
 
 namespace Model
 {
@@ -22,7 +23,17 @@ namespace Model
             resources.Add(r);
         }
 
+        public bool HasEnoughResources(Resources r)
+        {
+            return resources.Compare(r);
+        }
+
         public void AddAnimals(List<Animal> animals)
+        {
+
+        }
+
+        public void BuyBuilding(List<Building> buildings)
         {
 
         }

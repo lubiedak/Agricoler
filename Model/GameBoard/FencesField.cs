@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Model.GameBoard
 {
-    class FencesField
+    public class FencesField
     {
+        //int baseCost
+
     }
 }

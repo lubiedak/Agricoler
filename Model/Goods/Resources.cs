@@ -88,5 +88,10 @@ namespace Model.Goods
         {
             return _wood == r._wood && _stone == r._stone && _reed == r._reed;
         }
+
+        public bool Compare(Resources r)
+        {
+            return _wood >= r._wood && _stone >= r._stone && _reed >= r._reed;
+        }
     }
 }

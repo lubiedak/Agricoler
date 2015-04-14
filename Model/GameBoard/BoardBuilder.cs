@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model.GameBoard
 {
-    public class FieldBuilder
+    public class BoardBuilder
     {
         //Chcialbym, zeby byla jakas klasa odpowiedzialna za konstrukcje 
         //konkretnych pol w grze. Taki nadzorca tworzenia tych obiektów?
