@@ -10,24 +10,22 @@ namespace Model.GameBoard
 {
     public class ResourcesField : Field
     {
-        public Resources resources {get; private set;}
-        public Resources baseFill { get; private set; }
+        public Resources _resources {get; private set;}
         
-        public ResourcesField(int id, String name, Resources baseFill) : base(id, name)
+        public ResourcesField(int id, String name, Resources resources) : base(id, name)
         {
-            this.baseFill = baseFill;
-            Refill();
+            _resources = resources;
         }
 
         public override void DoAction(Player player)
         {
-            player.AddResources(resources);
-            resources.UseAll();
+            player.AddResources(_resources);
+            _resources.UseAll();
         }
 
-        public override void Refill()
+        public void Add(Resources resources)
         {
-            resources.Add(baseFill);
+            _resources.Add(resources);
         }
     }
 }
