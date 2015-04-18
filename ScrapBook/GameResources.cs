@@ -10,7 +10,7 @@ namespace Model2
     {
         public int Wood { get; set; }
         public int Stone { get; set; }
-        public int Wheat { get; set; }
+        public int Reed { get; set; }
         public int Fence { get; set; }
         public int Pig { get; set; }
         public int Sheep { get; set; }

@@ -10,11 +10,19 @@ namespace Model
 {
     public class Player
     {
+        public string Name { get; set; }
+
         public Resources resources { get; private set; }
         public List<Animal> animals { get; private set; }
 
         public Player()
         {
+            resources = new Resources(0, 0, 0);
+        }
+
+        public Player(string name)
+        {
+            Name = name;
             resources = new Resources(0, 0, 0);
         }
 

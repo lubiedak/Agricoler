@@ -8,6 +8,8 @@ namespace Model2.Delegates
 {
     public delegate void FieldEvent(Player p, int? count);
 
+    public delegate void FieldEvent(Player p);
+
     public static class FieldEventsLibrary
     {
         private static void IsCountNull(int? count)
@@ -31,7 +33,7 @@ namespace Model2.Delegates
         public static void TransferWheat(Player p, int? count)
         {
             IsCountNull(count);
-            p.Resources.Wheat += (int)count;
+            p.Resources.Reed += (int)count;
         }
 
         private static void TransferPig(Player p, int count)
@@ -142,6 +144,7 @@ namespace Model2.Delegates
         {
             throw new NotImplementedException();
         }
+
         public static void BuildSpecialBuilding(Player p, int? count)
         {
             throw new NotImplementedException();

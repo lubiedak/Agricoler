@@ -26,7 +26,7 @@ namespace Model2
                 new CountableField(2, FieldEventsLibrary.TransferStone),
                 new Field(FieldEventsLibrary.ChangeWoodToFence),
                 new Field(new FieldEvent[]{(m,n)=>{m.Resources.Fence += 2; n=null;}, FieldEventsLibrary.ChangeTwoStonesToFence}),
-                new Field((m,n)=>{m.Resources.Wood+=1;m.Resources.Stone+=1;m.Resources.Wheat+=1;n=null;}),
+                new Field((m,n)=>{m.Resources.Wood+=1;m.Resources.Stone+=1;m.Resources.Reed+=1;n=null;}),
                 new CountableField(1, new FieldEvent[]{FieldEventsLibrary.TransferFence, FieldEventsLibrary.ExtendPlayersField}),
                 new Field(FieldEventsLibrary.BuildShed),
                 new Field(new FieldEvent[]{(m,n)=>{m.Resources.Manger += 1; n=null;}, FieldEventsLibrary.BuildManger}),
