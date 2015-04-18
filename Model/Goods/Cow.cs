@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model.GameBoard
+namespace Model.Goods
 {
-    class BuildingField
+    public class Cow
     {
-
     }
 }
