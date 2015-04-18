@@ -40,19 +40,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Game.cs" />
+    <Compile Include="GameBoard\Action.cs" />
+    <Compile Include="GameBoard\ActionField.cs" />
     <Compile Include="GameBoard\AnimalField.cs" />
     <Compile Include="GameBoard\Board.cs" />
-    <Compile Include="GameBoard\Building.cs" />
     <Compile Include="GameBoard\BuildingField.cs" />
     <Compile Include="GameBoard\FencesField.cs" />
     <Compile Include="GameBoard\Field.cs" />
-    <Compile Include="GameBoard\BoardBuilder.cs" />
+    <Compile Include="GameBoard\FieldBuilder.cs" />
     <Compile Include="GameBoard\ResourcesField.cs" />
     <Compile Include="GameBoard\ResourcesWSRField.cs" />
     <Compile Include="GameBoard\SheepsAndReedField.cs" />
     <Compile Include="Goods\Animal.cs" />
+    <Compile Include="Goods\Cow.cs" />
     <Compile Include="Goods\Goods.cs" />
+    <Compile Include="Goods\Horse.cs" />
+    <Compile Include="Goods\Pig.cs" />
     <Compile Include="Goods\Resources.cs" />
+    <Compile Include="Goods\Sheep.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PlayerBoard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

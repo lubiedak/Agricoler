@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model.GameBoard
 {
-    class BuildingField
+    public class Action
     {
-
     }
 }

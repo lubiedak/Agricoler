@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Model;
-using Model.Goods;
 
-namespace Model.GameBoard
+namespace Model.Goods
 {
-    public class Building
+    public class Sheep : Animal
     {
-        public Resources cost { get; private set; }
     }
 }

@@ -16,7 +16,6 @@ namespace Model.GameBoard
         public ResourcesField(int id, String name, Resources baseFill) : base(id, name)
         {
             this.baseFill = baseFill;
-            resources = new Resources(0, 0, 0);
             Refill();
         }
 
@@ -24,13 +23,11 @@ namespace Model.GameBoard
         {
             player.AddResources(resources);
             resources.UseAll();
-            isOccupied = true;
         }
 
         public override void Refill()
         {
             resources.Add(baseFill);
-            isOccupied = false;
         }
     }
 }

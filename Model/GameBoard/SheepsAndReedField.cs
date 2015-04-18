@@ -17,7 +17,6 @@ namespace Model.GameBoard
             : base(id, name)
         {
             reed = 1;
-            sheeps = new List<Animal>();
         }
 
         public override void DoAction(Player player)
@@ -26,7 +25,6 @@ namespace Model.GameBoard
             player.AddResources(new Resources(0, 0, reed));
             sheeps.Clear();
             reed = 0;
-            isOccupied = true;
         }
 
         public override void Refill()
@@ -35,7 +33,6 @@ namespace Model.GameBoard
                 reed++;
             else
                 sheeps.Add(new Animal(AnimalType.Sheep));
-            isOccupied = false;
         }
     }
 }
