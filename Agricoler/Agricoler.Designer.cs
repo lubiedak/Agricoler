@@ -71,12 +71,13 @@
             // mainLayout
             // 
             this.mainLayout.AutoSize = true;
+            this.mainLayout.BackColor = System.Drawing.SystemColors.Control;
             this.mainLayout.ColumnCount = 5;
-            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.999F));
+            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.0016F));
+            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.9998F));
+            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.9998F));
+            this.mainLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.9998F));
             this.mainLayout.Controls.Add(this.mainBoard, 0, 0);
             this.mainLayout.Controls.Add(this.farm1blue, 1, 0);
             this.mainLayout.Controls.Add(this.farm1red, 1, 1);
@@ -98,16 +99,17 @@
             this.mainBoard.Margin = new System.Windows.Forms.Padding(0);
             this.mainBoard.Name = "mainBoard";
             this.mainLayout.SetRowSpan(this.mainBoard, 2);
-            this.mainBoard.Size = new System.Drawing.Size(320, 460);
+            this.mainBoard.Size = new System.Drawing.Size(319, 460);
             this.mainBoard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.mainBoard.TabIndex = 0;
             this.mainBoard.TabStop = false;
+            this.mainBoard.Paint += new System.Windows.Forms.PaintEventHandler(this.mainBoard_Paint);
             // 
             // farm1blue
             // 
             this.farm1blue.Dock = System.Windows.Forms.DockStyle.Fill;
             this.farm1blue.Image = global::Agricoler.Properties.Resources.farm;
-            this.farm1blue.Location = new System.Drawing.Point(320, 0);
+            this.farm1blue.Location = new System.Drawing.Point(319, 0);
             this.farm1blue.Margin = new System.Windows.Forms.Padding(0);
             this.farm1blue.Name = "farm1blue";
             this.farm1blue.Size = new System.Drawing.Size(128, 230);
@@ -119,7 +121,7 @@
             // 
             this.farm1red.Dock = System.Windows.Forms.DockStyle.Fill;
             this.farm1red.Image = global::Agricoler.Properties.Resources.farm;
-            this.farm1red.Location = new System.Drawing.Point(320, 230);
+            this.farm1red.Location = new System.Drawing.Point(319, 230);
             this.farm1red.Margin = new System.Windows.Forms.Padding(0);
             this.farm1red.Name = "farm1red";
             this.farm1red.Size = new System.Drawing.Size(128, 230);
@@ -131,6 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(640, 484);
             this.Controls.Add(this.mainLayout);
             this.Controls.Add(this.mainMenu);
@@ -139,7 +142,7 @@
             this.MinimumSize = new System.Drawing.Size(656, 522);
             this.Name = "Agricoler";
             this.Text = "Agricoler";
-            this.ResizeEnd += new System.EventHandler(this.Agricoler_ResizeEnd);
+            this.SizeChanged += new System.EventHandler(this.Agricoler_SizeChanged);
             this.mainMenu.ResumeLayout(false);
             this.mainMenu.PerformLayout();
             this.mainLayout.ResumeLayout(false);

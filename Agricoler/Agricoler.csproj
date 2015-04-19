@@ -50,6 +50,13 @@
     <Compile Include="Agricoler.Designer.cs">
       <DependentUpon>Agricoler.cs</DependentUpon>
     </Compile>
+    <Compile Include="Icons.cs" />
+    <Compile Include="mainDrawing\Animals.cs" />
+    <Compile Include="mainDrawing\MainDrawer.cs" />
+    <Compile Include="mainDrawing\Field.cs" />
+    <Compile Include="mainDrawing\Goods.cs" />
+    <Compile Include="mainDrawing\Scaler.cs" />
+    <Compile Include="mainDrawing\Player.cs" />
     <Compile Include="MainResizer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,6 +91,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="graphics\farm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="graphics\cow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="graphics\horse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="graphics\pig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="graphics\reed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="graphics\sheep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="graphics\stone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="graphics\wood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="graphics\fence.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="graphics\playerBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="graphics\playerRed.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

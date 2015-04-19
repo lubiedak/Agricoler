@@ -1,0 +1,18 @@
+id;name;x;y;width;height
+11;Take wood and first player token;30;360;165;160
+12;Take wood;200;360;170;160
+13;Take stone;385;360;190;160
+14;Take stone;585;360;200;160
+21;Build fences;30;520;165;200
+22;Build fences;200;520;170;200
+23;Take wood, stone and reed;385;520;190;200
+24;Take fences and extend your farm;585;520;200;200
+31;Build Stall;30;720;165;220
+32;Build Soth;200;720;170;220
+33;Take reed and sheeps;385;720;190;220
+34;Take pig and sheeps;585;720;200;220
+41;Upgrade stalls to stables;30;940;165;210
+42;Build special building;200;940;170;105
+43;Take cow and pigs;385;940;190;210
+44;Take horse and sheeps;585;940;200;210
+52;Build special building;200;1045;170;105
