@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model.GameBoard
+namespace Model.Interfaces
 {
-    public class Action
+    public interface ICountable
     {
+        public int Quantity { get; private set; }
     }
 }
