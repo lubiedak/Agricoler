@@ -110,6 +110,23 @@ namespace Model.Delegates
             p.Resources.Fence += (int)count;
         }
 
+        public static void GetTwoFences(Player p, int? count)
+        {
+            p.Resources.Fence += 2;
+        }
+
+        public static void GetReedStoneWood(Player p, int? count)
+        {
+            p.Resources.Wood += 1;
+            p.Resources.Stone += 1;
+            p.Resources.Reed += 1;
+        }
+
+        public static void GetOneManger(Player p, int? count)
+        {
+            p.Resources.Manger += 1;
+        }
+
         public static void PlayerStartsNextTurn(Player p, int? count)
         {
             throw new NotImplementedException();
