@@ -10,9 +10,18 @@ namespace Model
 {
     public class Game
     {
-        List<Field> BoardFields;
-        public Game()
+        public Player PlayerRed { get; set; }
+        public Player PlayerBlue { get; set; }
+
+        public Player StartingPlayer { get; set; }
+
+        public List<Field> BoardFields;
+
+        public Game(string playerRedName, string playerBlueName)
         {
+            PlayerRed = new Player(playerRedName);
+            PlayerBlue = new Player(playerBlueName);
+            StartingPlayer = PlayerRed;
             InitializeFields();
         }
 

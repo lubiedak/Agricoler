@@ -11,7 +11,7 @@ namespace Model.GameBoard
     public class CountableField : Field, ICountable
     {
         private int _quantityToAdd;
-        public int Quantity { get; private set; }
+        public int Quantity { get; set; }
 
         /// <summary>
         /// Default constructor for CountableField objects

@@ -8,6 +8,6 @@ namespace Model.Interfaces
 {
     public interface ICountable
     {
-        public int Quantity { get; private set; }
+        int Quantity { get; set; }
     }
 }

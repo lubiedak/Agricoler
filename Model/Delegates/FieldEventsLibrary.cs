@@ -8,7 +8,7 @@ namespace Model.Delegates
 {
     public delegate void FieldEvent(Player p, int? count);
 
-    public delegate void FieldEvent(Player p);
+    //public delegate void FieldEvent(Player p);
 
     public static class FieldEventsLibrary
     {
